@@ -14,7 +14,7 @@ activate it:
 
 install libs
 
-	pip3 install -r requirements.txt
+	pip3 install --upgrade --force-reinstall --no-cache-dir  -r requirements.txt
 
 setup kernel in jupyter to virtualenv python
 
