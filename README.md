@@ -25,8 +25,8 @@ run jupyter:
 
 	jupyter notebook
 
-in another tab activate virtualenv again when running jupyter
-check `which jupyter` links to the one in virtualenv
+in another terminal session activate virtualenv again and make sure that, when running `which jupyter`
+links to the jupyter installation in virtualenv
 
 Then tell Jupyter to load the extension with:
 
