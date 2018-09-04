@@ -20,8 +20,24 @@ setup kernel in jupyter to virtualenv python
 
 	python -m ipykernel install --user --name=venv
 
+
 run jupyter:
-	
+
 	jupyter notebook
-	
-pick new and `venv`
+
+in another tab activate virtualenv again when running jupyter
+check `which jupyter` links to the one in virtualenv
+
+Then tell Jupyter to load the extension with:
+
+    jupyter nbextension enable --py --sys-prefix widgetsnbextension
+
+    jupyter nbextension enable --py --sys-prefix gmaps
+
+Kill jupyter notebook in previous session and go in that when nbextension commands executed
+
+
+when you open gmap_us_taxi_heatmap and run the first cell you should see the heatmap like the one below:
+
+
+![heatmap](map.png)
