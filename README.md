@@ -4,9 +4,14 @@ install python3 if needed with:
 
 	brew install python3
 
+alias pip3
+
+	alias pip3=/usr/local/Cellar/python/3.7.0/bin/pip3
+
+
 python3 virtualenv
 
-	virtualenv --python=/usr/local/bin/python3 venv
+	virtualenv --python=/usr/local/Cellar/python/3.7.0/bin/python3 venv
 
 activate it:
 
@@ -25,6 +30,9 @@ run jupyter:
 
 	jupyter notebook
 
+STRAVA (gmaps)
+------
+
 in another terminal session activate virtualenv again and make sure that, when running `which jupyter`
 links to the jupyter installation in virtualenv
 
@@ -41,3 +49,22 @@ when you open gmap_us_taxi_heatmap and run the first cell you should see the hea
 
 
 ![heatmap](map.png)
+
+
+Image detection (openCV / yolo)
+------------------------------
+
+Install opencv and img dependencies:
+
+	brew install opencv3 --with-contrib --with-python3
+
+	brew install cmake pkg-config
+
+	brew install jpeg libpng libtiff openexr
+	
+	brew install eigen tbb
+
+
+then install with pip
+
+	pip install opencv-python
