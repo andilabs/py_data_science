@@ -51,6 +51,21 @@ when you open gmap_us_taxi_heatmap and run the first cell you should see the hea
 ![heatmap](map.png)
 
 
+STRAVA
+------
+
+requires you to add following environment variables in `.env` file:
+
+the values you will find in your strava app
+
+	STRAVA_CLIENT_ID=<FILL_IT>
+	STRAVA_CLIENT_SECRET=<FILL_IT>
+	STRAVA_ACCESS_TOKEN=<FILL_IT>
+	
+![strava](strava.png)
+
+
+
 Image detection (openCV / yolo)
 ------------------------------
 
